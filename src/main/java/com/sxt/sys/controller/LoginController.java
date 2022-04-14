@@ -46,7 +46,7 @@ public class LoginController {
 			entity.setLoginname(activerUser.getUser().getName()+"-"+activerUser.getUser().getLoginname());
 			entity.setLoginip(WebUtils.getRequest().getRemoteAddr());
 			entity.setLogintime(new Date());
-			loginfoService.save(entity);
+			loginifoServce.save(entity);
 			return ResultObj.LOGIN_SUCCESS;
 		} catch (AuthenticationException e) {
 			e.printStackTrace();
